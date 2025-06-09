@@ -29,6 +29,7 @@
   "license": "ISC",
   "description": "Backend server for DinkLink, an application for Pickleball players to connect and play together.",
   "dependencies": {
+    "@aws-sdk/client-location": "^3.826.0",
     "@logtail/node": "^0.4.21",
     "@logtail/winston": "^0.4.21",
     "aws-sdk": "^2.1610.0",
@@ -69,6 +70,7 @@
     "@types/winston": "^2.4.4",
     "@typescript-eslint/eslint-plugin": "^8.33.1",
     "@typescript-eslint/parser": "^8.33.1",
+    "aws-sdk-client-mock": "^4.1.0",
     "babel-jest": "^29.7.0",
     "dotenv-cli": "^7.4.2",
     "eslint": "^9.28.0",

@@ -1,5 +1,6 @@
 import { Router } from "express";
 import getCourtsController from "./controllers/getCourtsController";
+import createCourtController from "./controllers/createCourtController";
 
 /**
  * @swagger
@@ -10,7 +11,7 @@ import getCourtsController from "./controllers/getCourtsController";
 
 const courtsRoutes = Router();
 
-courtsRoutes.get("/v1/courts", getCourtsController);
-courtsRoutes.put("/v1/courts", getCourtsController);
+courtsRoutes.post("/v1/courts", getCourtsController);
+courtsRoutes.put("/v1/courts", createCourtController);
 
 export default courtsRoutes;
